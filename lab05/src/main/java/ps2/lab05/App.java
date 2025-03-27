@@ -75,7 +75,7 @@ public class App implements CommandLineRunner {
 	}
 	
 	public void alterar() {
-		out.print("# Digite o ID do titular a ser alterado: ");
+		out.print("Digite o ID do titular a ser alterado: ");
 		long id = Long.parseLong(entrada.nextLine());
 		Titular titular = titularRepo.findById(id).orElse(null);
 		
